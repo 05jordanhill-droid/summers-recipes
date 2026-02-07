@@ -1,0 +1,150 @@
+body{
+    width: 50%;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+header{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+    position: fixed;
+    width: 100%;
+
+    background-color: white;
+    /* margin-top: 0; */
+
+    left: 0;
+    top: 0;
+    padding-bottom: 10px;
+}
+
+main{
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding: 5px;
+    background-color: black;
+}
+main section{
+    background-color: white;
+}
+main section .first:hover{
+    cursor: pointer;
+    background-color: rgb(128, 128, 128, .5);
+}
+section:has(.first:hover) .first img{
+    opacity: 50%;
+}
+main section img{
+    width: 100%;
+}
+.first{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+.first h3{
+    padding-top: 18.72px;
+}
+.name{
+    margin-top: 0;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.main img{
+    border: 2px solid black;
+    margin-left: 2px;
+    width: 99%;
+}
+.instructions{
+    grid-column: 1/-1;
+    width: 50%;
+    margin-left: 25%;
+    text-align: left;
+}
+
+.recipe{
+    display: none;
+
+    position: absolute;
+    border: 1px solid black;
+    width: 60%;
+    min-height: 80%;
+    left: 20%;
+    top: 75px;
+}
+.recipeChange .recipe{
+    display: block;
+}
+.header{
+    display: flex;
+    align-items: center;
+}
+.header i{
+    aspect-ratio: 1/1;
+    margin-left: 15px;
+}
+.header i:hover{
+    cursor: pointer;
+    color: red;
+}
+.header h3{
+    margin-right: 35px;
+    width: 100%;
+}
+.indented{
+    margin-left: 20px;
+}
+.indented-2{
+    margin-left: 40px;
+}
+
+@media screen and (max-width: 255px) {
+    body{
+        width: 90%;
+    }
+    main{
+        grid-template-columns: 1fr;
+        margin-top: 180px;
+    }
+    .main{
+        display: block;
+    }
+    .instructions{
+        margin: 2px 0;
+        width: 100%;
+    }
+    .recipe{
+        width: 100%;
+        left: 0;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 255px) {
+    body{
+        width: 90%;
+    }
+    main{
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+    .main{
+        display: block;
+    }
+    .instructions{
+        margin: 2px 0;
+        width: 100%;
+    }
+    .recipe{
+        width: 100%;
+        left: 0;
+        padding: 5px;
+    }
+}
