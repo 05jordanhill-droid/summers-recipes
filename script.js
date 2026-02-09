@@ -1,9 +1,13 @@
 function recipeToggle(x){
-    x.classList.toggle("recipeChange");
+  x.classList.toggle("recipeChange");
     
-    window.scrollTo({
+  window.scrollTo({
     top: 0,
     behavior: "smooth"
   });
+}
+
+function notesToggle(x){
+  x.classList.toggle("notesChange");
 }
 

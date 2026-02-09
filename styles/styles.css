@@ -78,7 +78,7 @@ main section img{
     border: 1px solid black;
     width: 60%;
     min-height: 80%;
-    left: 20%;
+    left: 5%;
     top: 75px;
 }
 .recipeChange .recipe{
@@ -107,6 +107,32 @@ main section img{
     margin-left: 40px;
 }
 
+.notes_open{
+    position: fixed;
+    border: 1px solid black;
+    left: 80%;
+    top: 5%;
+    padding: 0;
+}
+.notes_open:hover{
+    cursor: pointer;
+    background-color: rgb(128, 128, 128, 0.5);
+}
+.notes_open h2{
+    margin: 5px;
+}
+.notes{
+    display: none;
+}
+.notesChange .notes{
+    display: block;
+    position: fixed;
+    left: 65%;
+    top: 16%;
+    width: 35%;
+    height: 80%;
+}
+
 @media screen and (max-width: 255px) {
     body{
         width: 90%;
@@ -131,6 +157,18 @@ main section img{
         width: 100%;
         left: 0;
         padding: 5px;
+    }
+    .notes_open{
+        background-color: white;
+        left: 30%;
+        top: 16%;
+        z-index: 3;
+    }
+    .notesChange .notes{
+        z-index: 3;
+        left: 0;
+        top: 22%;
+        width: 100%;
     }
 }
 
@@ -157,6 +195,19 @@ main section img{
     .recipe{
         width: 100%;
         left: 0;
+        top: 23%;
         padding: 5px;
+    }
+    .notes_open{
+        background-color: white;
+        left: 30%;
+        top: 16%;
+        z-index: 3;
+    }
+    .notesChange .notes{
+        z-index: 3;
+        left: 0;
+        top: 22%;
+        width: 100%;
     }
 }
