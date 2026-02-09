@@ -6,8 +6,3 @@ function recipeToggle(x){
     behavior: "smooth"
   });
 }
-
-function notesToggle(x){
-  x.classList.toggle("notesChange");
-}
-

@@ -78,7 +78,7 @@ main section img{
     border: 1px solid black;
     width: 60%;
     min-height: 80%;
-    left: 5%;
+    left: 20%;
     top: 75px;
 }
 .recipeChange .recipe{
@@ -106,8 +106,12 @@ main section img{
 .indented-2{
     margin-left: 40px;
 }
+iframe{
+    width: 200%;
+    height: 500px;
+}
 
-.notes_open{
+/* .notes_open{
     position: fixed;
     border: 1px solid black;
     left: 80%;
@@ -131,7 +135,8 @@ main section img{
     top: 16%;
     width: 35%;
     height: 80%;
-}
+    z-index: 3;
+} */
 
 @media screen and (max-width: 255px) {
     body{
@@ -158,18 +163,20 @@ main section img{
         left: 0;
         padding: 5px;
     }
-    .notes_open{
+    iframe{
+        width: 100%;
+    }
+    /* .notes_open{
         background-color: white;
         left: 30%;
         top: 16%;
         z-index: 3;
     }
     .notesChange .notes{
-        z-index: 3;
         left: 0;
         top: 22%;
         width: 100%;
-    }
+    } */
 }
 
 @media screen and (max-width: 900px) and (min-width: 255px) {
@@ -198,16 +205,18 @@ main section img{
         top: 23%;
         padding: 5px;
     }
-    .notes_open{
+    iframe{
+        width: 100%;
+    }
+    /* .notes_open{
         background-color: white;
         left: 30%;
         top: 16%;
         z-index: 3;
     }
     .notesChange .notes{
-        z-index: 3;
         left: 0;
         top: 22%;
         width: 100%;
-    }
+    } */
 }
