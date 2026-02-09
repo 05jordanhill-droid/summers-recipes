@@ -45,11 +45,13 @@ main section img{
 .first{
     width: 100%;
     aspect-ratio: 1/1;
-}
-.first h3{
-    padding-top: 18.72px;
+    padding-top: 15px;
 }
 .name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 22px;
     margin-top: 0;
 }
 
@@ -60,7 +62,7 @@ main section img{
 .main img{
     border: 2px solid black;
     margin-left: 2px;
-    width: 99%;
+    width: 98%;
 }
 .instructions{
     grid-column: 1/-1;
@@ -113,6 +115,11 @@ main section img{
         grid-template-columns: 1fr;
         margin-top: 180px;
     }
+    .first{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        aspect-ratio: auto;
+    }
     .main{
         display: block;
     }
@@ -134,6 +141,11 @@ main section img{
     main{
         grid-template-columns: 1fr;
         margin-top: 150px;
+    }
+    .first{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        aspect-ratio: auto;
     }
     .main{
         display: block;
