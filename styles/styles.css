@@ -111,6 +111,10 @@ iframe{
     height: 500px;
 }
 
+.smaller{
+    font-size: .9em;
+}
+
 /* .notes_open{
     position: fixed;
     border: 1px solid black;
